@@ -1,0 +1,21 @@
+# Python virtual environment
+venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Environment variables & secrets
+.env
+config.json
+instance/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Log files
+logs/
+*.log
+
+# Python dependencies (should use requirements.txt instead)
+pip-log.txt
