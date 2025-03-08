@@ -86,7 +86,7 @@ def get_high_yield_crops(N, P, K, pH, rainfall, temperature, min_crops=10, yield
         # Compute composite score
         condition_cols = [f'{col}_score' for col in features]
         result['condition_score'] = result[condition_cols].mean(axis=1)
-        result['composite_score'] = 0.8 * result['condition_score'] + 0.2 * result['yield_score']
+        result['composite_score'] = 0.7 * result['condition_score'] + 0.3 * result['yield_score']
 
         # Sort by scores
         result = result.sort_values(['composite_score', 'condition_score', 'yield_score'], ascending=[False, False, False])
